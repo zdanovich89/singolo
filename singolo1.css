@@ -15,6 +15,10 @@ h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
+
+h4 {
+    margin: 0;
+}
    
 hr {
     box-sizing: content-box; 
@@ -181,11 +185,24 @@ template {
 
 @font-face {
     font-family: "Lato Bold";
+    src: url(./assets/fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: "Lato Black";
+    src: url(./assets/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: "Lato Light";
     src: url(./assets/fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: "Lato Regular";
+    src: url(./assets/fonts/Lato-Regular.ttf);
 }
 
 html {
-    font-family: "Lato Bold", Arial, Helvetica, sans-serif;
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
     font-size: 10px;
 }
 
@@ -216,7 +233,8 @@ html {
     margin-top: -4px;   
 }
 
-.logo h1{
+.logo h1 {
+    font-family: "Lato Bold", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
@@ -265,14 +283,152 @@ html {
 }
 
 .slider-content {
-    height: 600px;
+    height: 591px;
     display: flex;
     flex-flow: row;
 }
 
 .slider__chev-left {
+    display: flex;
+    background-image: url(./assets/images/chev_left.png);
+    background-repeat: no-repeat;
     width: 16px;
-    height: 27px;
+    height: 27px;   
+    margin: 280px 0 286px 42px; 
+}
+
+.slider__chev-right{
+    display: block;
+    background-image: url(./assets/images/chev_right.png);
+    width: 16px;
+    height: 27px;    
+    margin: 280px 40px 286px 55px;
+}
+
+.slider__phone-vertical {
+    width: 240px;
+    height: 483px;
+    padding: 52px 0px 58px 54px;
+}
+
+.slider__phone-horizontal {
+    width: 483px;
+    height: 240px;
+    padding: 172px 0 0 75px;
+}
+
+.slider-bottom {
+    height: 8px;
+    background-color: #ea676b;
+}
+.our-services {
+    background-color: #f2f2f2;
+    height: 496px;
+}
+
+.services-header {
+    font-family: "Lato Black", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    padding: 60px 0 0 40px;
+    color: #666d89;
+}
+
+.our-services__content {
+    font-family: "Lato Light", Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 19px 35px 38px 41px;
+    line-height: 3rem;
+    color: #767e9e;
+    letter-spacing: -0.05px;
+}
+
+.column3-layout {
+    display: flex;
+    padding: 9px 0 0px 41px;
+}
+
+.icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px; 
+    background-repeat: no-repeat;
+}
+
+.icon-wrapper {
+    height: 100%;
+    margin-right: 3px;
+}
+
+.icon-custom {
+    background-image: url(./assets/images/pen.png);
+}
+
+.icon-inovative {
+    background-image: url(./assets/images/lightbulb.png);
+}
+
+.icon-love {
+    background-image: url(./assets/images/heart.png);
+}
+
+.icon-responsive{
+    background-image: url(./assets/images/phone.png);
+}
+
+.icon-support {
+    background-image: url(./assets/images/bubble.png);
+}
+
+.icon-start {
+    background-image: url(./assets/images/star.png);
+}
+
+.column-header {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-family:  "Lato Black", Arial, Helvetica, sans-serif;
+    color: #666d89;
+}
+
+.first-column {
+    display: flex;
+    flex-flow: column wrap;
+    width: 319px;
+    height: 113px;
+}
+
+.second-column {
+    display: flex;
+    flex-flow: column wrap;
+    width: 319px;
+    height: 113px;
+}
+
+.third-column {
+    display: flex;
+    flex-flow: column wrap;
+    width: 319px;
+    height: 113px;
+}
+
+.column-wraper {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.column3-layout__content {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #767e9e;
+    width: 223px;
+    margin-top: 9px;
+}
+
+.services-bottom {
+    height: 6px;
+    background-color: #ffffff;
 }
 
 

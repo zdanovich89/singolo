@@ -273,14 +273,14 @@ html {
     text-decoration: none;
 }
 
+.navigation a:hover {
+    color:#f06c64;
+}
+
 .navigation li:not(:first-child):before {
     color:#494e62;
     content: "\2022";
     padding-right: 10px;
-}
-
-.header_home a{
-   color: #f06c64;
 }
 
 .slider {
@@ -300,6 +300,7 @@ html {
     width: 16px;
     height: 27px;   
     margin: 280px 0 286px 42px; 
+    cursor: pointer;
 }
 
 .slider__chev-right{
@@ -308,6 +309,7 @@ html {
     width: 16px;
     height: 27px;    
     margin: 280px 40px 286px 55px;
+    cursor: pointer;
 }
 
 .slider__phone-vertical {
@@ -346,6 +348,9 @@ html {
     line-height: 3rem;
     color: #767e9e;
     letter-spacing: -0.05px;
+    overflow: hidden;
+    max-width: 900px;
+    max-height: 58px;
 }
 
 .column3-layout {

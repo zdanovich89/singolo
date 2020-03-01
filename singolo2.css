@@ -1,0 +1,419 @@
+html {
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
+} 
+ 
+body {
+    margin: 0;
+}
+  
+main {
+    display: block;
+}
+  
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+   
+hr {
+    box-sizing: content-box; 
+    height: 0; 
+    overflow: visible; 
+}
+
+a {
+    background-color: transparent;
+}  
+  
+img {
+    border-style: none;
+}
+  
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; 
+    font-size: 100%; 
+    line-height: 1.15; 
+    margin: 0; 
+}  
+ 
+button,
+input { 
+    overflow: visible;
+}
+    
+button,
+select { 
+    text-transform: none;
+}  
+    
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+} 
+  
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}   
+    
+textarea {
+    overflow: auto;
+}  
+   
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+  
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit; 
+}  
+  
+details {
+    display: block;
+}
+  
+summary {
+    display: list-item;
+}
+  
+template {
+    display: none;
+}
+  
+[hidden] {
+    display: none;
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url(./assets/fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: "Lato Black";
+    src: url(./assets/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url(./assets/fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: "Lato Regular";
+    src: url(./assets/fonts/Lato-Regular.ttf);
+}
+
+html {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.wrapper {      
+    margin: auto;
+    max-width: 1020px;
+}
+
+.portfolio {
+    background-color: #2d303a;
+}
+
+.header {
+    color: #666d89;
+    font-size: 3rem;
+    line-height: 1.8rem;
+    font-family: "Lato Black", Arial, Helvetica, sans-serif;
+    padding: 69px 0 16px 41px
+}
+
+.information__content {
+    color: #767e9e;
+    font-size: 1.8rem;
+    font-family: "Lato Light", Arial, Helvetica, sans-serif;
+    padding: 16px 0 16px 41px;
+}
+
+.information__category {
+   
+}
+
+.button {
+    background-color: #2d303a;
+    color: #767e9e;
+    border-radius: 5px;
+    border: 1px solid #666d89;
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 4px;
+}
+.button:hover {
+    color: #c5c5c5;
+    border: 1px solid #c5c5c5;
+}
+
+.button-all {
+    margin: 0px 7px 5px 41px;
+    padding: 3px 8px 4px 6px;
+}
+
+.button-web {
+    margin: 0px 7px 5px 0px;
+    padding: 3px 6px 4px 6px;
+}
+
+.button-graphic {
+    margin: 0px 7px 5px 0px;
+    padding: 3px 5px 4px 6px;
+}
+
+.button-art{
+    margin: 0px 7px 5px 0px;
+    padding: 3px 6px 4px 6px;
+}
+
+.column4-layout {
+    display: flex;
+    margin: 14px 0px 47px 40px;
+    overflow: hidden;
+    max-width: 960px;
+    max-height: 621px;
+}
+
+.portfolio_image {
+    width: 220px;
+    height: 187px;
+    margin: 0px 20px 20px 0px;
+}
+
+.image1{
+    background-image: url(./assets/images/portfolio_image1.png);
+    background-position-x: -2px;
+    background-position-y: -1px;
+}
+
+.image2{
+    background-image: url(./assets/images/portfolio_image2.png);
+    background-position-x: -1px;
+    background-position-y: -1px;
+}
+
+.image3{
+    background-image: url(./assets/images/portfolio_image3.png);
+    background-position-x: -1px;
+    background-position-y: -1px;
+}
+
+.image4{
+    background-image: url(./assets/images/portfolio_image4.png);
+    background-position-x: -1px;
+    background-position-y: -1px;
+}
+
+.image5{
+    background-image: url(./assets/images/portfolio_image5.png);
+    background-position-x: -2px;
+    background-position-y: -1px;
+}
+
+.image6{
+    background-image: url(./assets/images/portfolio_image6.png);
+    background-position-x: -1px;
+    background-position-y: -1px;
+}
+
+.image7{
+    background-image: url(./assets/images/portfolio_image7.png);
+    background-position-x: -1px;
+    background-position-y: -1px;
+}
+
+.image8{
+    background-image: url(./assets/images/portfolio_image8.png);
+    background-position-x: -1px;
+    background-position-y: -1px;
+}
+
+.image9{
+    background-image: url(./assets/images/portfolio_image9.png);
+    background-position-x: -2px;
+    background-position-y: -1px;
+}
+
+.image10{
+    background-image: url(./assets/images/portfolio_image10.png);
+    background-position-x: -1px;
+    background-position-y: -1px;
+}
+
+.image11{
+    background-image: url(./assets/images/portfolio_image11.png);
+    background-position-x: -1px;
+    background-position-y: -1px;
+}
+
+.image12{
+    background-image: url(./assets/images/portfolio_image12.png);
+    background-position-x: -1px;
+    background-position-y: -1px;
+}
+
+.portfolio__bottom {
+    height: 6px;
+    background-color: #323746;
+}
+
+.about-us-section {
+    background-color: #f2f2f2;
+}
+
+.about-us__header {
+    color: #666d89;
+    font-size: 3rem;
+    font-family: "Lato Black", Arial, Helvetica, sans-serif;
+    padding: 60px 0 0 41px;    
+}
+
+.about-us__information {
+    color: #767e9e;
+    font-size: 1.8rem;
+    font-family: "Lato Light", Arial, Helvetica, sans-serif;
+    padding: 19px 0px 0px 40px;
+    line-height: 3rem;
+}
+
+.column3-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column3-layout__first-column {
+    padding: 45px 0px 0px 40px;
+}
+
+.column3-layout__second-column {
+    padding: 45px 0px 0px 0px;    
+}
+
+.column3-layout__third-column {
+    padding: 45px 37px 0px 0px;   
+}
+
+.photo1, .photo2, .photo3 {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+.photo2 {
+    margin-left: 9px;
+}
+
+.photo3 {
+    margin-left: 21px;
+}
+
+.person-header {
+    font-family: "Lato Black", Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #666d89;
+    padding: 15px 0px 10px 0px;
+}
+
+.person2 {
+    margin-left: 8px;
+}
+
+.person3 {
+    margin-left: 20px;
+}
+
+.about-us__person-information {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #767e9e;
+    padding: 0px 0px 0px 0px;
+}
+
+.person2-information {
+    margin-left: 11px;
+}
+
+.person3-information {
+    margin-left: 20px;
+}
+
+.social-icons{
+    display: flex;
+    color: #666d89;
+    margin: 21px 0 65px;
+}
+
+.social-icons__facebook-icon, .social-icons__google-icon, .social-icons__twitter-icon, .social-icons__linkedin-icon {
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.social-icons__facebook-icon {
+    background-image: url(./assets/images/Facebook.svg);
+}
+
+.social-icons__google-icon {
+    background-image: url(./assets/images/Google.svg);
+}
+
+.social-icons__twitter-icon {
+    background-image: url(./assets/images/Twitter.svg);
+}
+
+.social-icons__linkedin-icon {
+    background-image: url(./assets/images/LinkedIn.svg);
+}
+
+.social-icons__person1, .social-icons__person2, .social-icons__person3{
+    display: flex;
+}
+
+.social-icons__facebook-icon, .social-icons__google-icon, .social-icons__twitter-icon, .social-icons__linkedin-icon:hover {
+    cursor: pointer;
+}
+
+.social-icons__person2 {
+    margin-left: 9px;
+}
+
+.social-icons__person3 {
+    margin-left: 20px;
+}
+
+.about-us__bottom {
+    height: 6px;
+    background-color: #ffffff;
+}

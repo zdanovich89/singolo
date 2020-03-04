@@ -1,0 +1,337 @@
+html {
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
+} 
+ 
+body {
+    margin: 0;
+}
+  
+main {
+    display: block;
+}
+  
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2, h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+h4 {
+    margin: 0;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+   
+hr {
+    box-sizing: content-box; 
+    height: 0; 
+    overflow: visible; 
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}  
+  
+img {
+    border-style: none;
+}
+  
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; 
+    font-size: 100%; 
+    line-height: 1.15; 
+    margin: 0; 
+}  
+ 
+button,
+input { 
+    overflow: visible;
+}
+    
+button,
+select { 
+    text-transform: none;
+}  
+    
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+} 
+  
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}   
+    
+textarea {
+    overflow: auto;
+}  
+   
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+  
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit; 
+}  
+  
+details {
+    display: block;
+}
+  
+summary {
+    display: list-item;
+}
+  
+template {
+    display: none;
+}
+  
+[hidden] {
+    display: none;
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url(./assets/fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: "Lato Black";
+    src: url(./assets/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url(./assets/fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: "Lato Regular";
+    src: url(./assets/fonts/Lato-Regular.ttf);
+}
+
+html {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.wrapper {      
+    margin: auto;
+    max-width: 1020px;
+}
+
+.get-quote {
+    background-color: #f06c64;
+}
+
+.get-quote__header {
+    color: #f0d8d9;
+    font-size: 3rem;
+    line-height: 1.8rem;
+    font-family: "Lato Black", Arial, Helvetica, sans-serif;
+    padding: 68px 0 27px 40px;
+    letter-spacing: 0.0001rem;
+}
+
+.get-quote__describe {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #f0d8d9;
+    font-family: "Lato Light", Arial, Helvetica, sans-serif;
+    padding: 0 0 44px 41px;
+    letter-spacing: 0.0001rem;
+}
+
+.column2-layout {
+    display: flex;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 619px;
+    padding: 0 21px 11px 40px;
+}
+
+.feedback__input {
+    height: 36px;
+}
+
+.feedback > * {
+    margin-bottom: 16px; 
+    border-radius: 5px;  
+    background-color: #d6564f;
+    border: none;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+}
+
+.feedback > *::placeholder{
+    color: #ee8284;
+}
+
+.feedback__textarea {
+    resize: none;
+    padding-top: 7px;
+    height: 193px;
+}
+
+.feedback__submit {
+    width: 60px;
+    color: #ee8284;
+    align-self: flex-end;
+}
+
+.contact-information__header {
+    font-family: "Lato Black", Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #f0d8d9;
+    padding-bottom: 10px;
+}
+
+.contact-information__content {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #f0d8d9;
+    width: 310px;
+}
+
+.address__icon {
+    display: inline-block;
+    background-image: url(./assets/images/location@1X.png);
+    background-repeat: no-repeat;
+    width: 7px;
+    height: 11px;
+    margin-left: 3px;
+}
+
+.address__inf {
+    display: inline-block;
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #f0d8d9;
+    margin: 21px 0px 0px 12px;
+}
+
+.phone-icon {
+    display: inline-block;
+    background-image: url(./assets/images/phone@1X.png);
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 11px;
+    margin-left: 1px;
+}
+
+.phone-icon {
+    display: inline-block;
+    background-image: url(./assets/images/phone@1X.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 12px;
+}
+
+.email-icon {
+    display: inline-block;
+    background-image: url(./assets/images/mail@1X.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 9px; 
+}
+
+.tel {
+    display: inline-block;
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #f0d8d9;
+    padding-left: 3px;
+}
+
+.mail {
+    display: inline-block;
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #f0d8d9;
+}
+
+.get-quote__bottom {
+    height: 6px;
+    background-color: #ea676b;
+}
+
+.footer {
+    background-color: #2d303a;
+}
+
+.footer-copyright {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 0.6rem;
+    color: #666d89;
+    letter-spacing: 0.01px;
+    padding: 35px 0 32px 41px;
+}
+
+.footer__social-icons {
+    display: flex;
+    width: 160px;
+    margin-right: 35px;
+    justify-content: space-between;
+}
+
+.footer__facebook-icon {
+    background-image: url(./assets/images/Facebook.svg);
+}
+
+.footer__google-icon {
+    background-image: url(./assets/images/Google.svg);
+}
+
+.footer__twitter-icon {
+    background-image: url(./assets/images/Twitter.svg);
+}
+
+.footer__linkedin-icon {
+    background-image: url(./assets/images/LinkedIn.svg);
+}
+
+.footer__facebook-icon, .footer__google-icon, .footer__twitter-icon, .footer__linkedin-icon {
+    display: flex;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

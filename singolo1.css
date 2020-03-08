@@ -211,6 +211,12 @@ html {
     font-size: 10px;
 }
 
+.wrapper {      
+    margin: auto;
+    max-width: 1020px;
+}
+
+
 .header {
     background-color: #2d303a;  
    
@@ -222,10 +228,6 @@ html {
     display: flex;
     justify-content: space-between;   
     align-items: center;
-}
-.wrapper {      
-    margin: auto;
-    max-width: 1020px;
 }
 
 .header-bottom {

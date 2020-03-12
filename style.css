@@ -273,7 +273,7 @@ html {
     list-style-type: none;  
 }
 
-.navigation a {
+.nav-header__link {
     color: #ffffff;
     text-decoration: none;
 }
@@ -465,7 +465,6 @@ html {
     padding: 16px 0 16px 41px;
 }
 
-
 .button {
     background-color: #2d303a;
     color: #767e9e;
@@ -474,7 +473,9 @@ html {
     font-family: "Lato Regular", Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     padding: 4px;
+    outline: none;
 }
+
 .button:hover {
     color: #c5c5c5;
     border: 1px solid #c5c5c5;
@@ -921,4 +922,14 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.active-menu {
+    color:#f06c64;
+    text-decoration: none;
+}
+
+.active-tag {
+    color: #c5c5c5;
+    border: 1px solid #c5c5c5;
 }

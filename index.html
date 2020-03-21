@@ -33,10 +33,21 @@
         <div class="slider">
             <div class="wrapper">
                 <div class="slider-content">
-                    <span class="slider__chev-left"></span>
-                    <img class="slider__phone-vertical" src="./assets/images/iPhone_vertical.png" alt="phone">
-                    <img class="slider__phone-horizontal" src="./assets/images/iPhone_horizontal.png" alt="phone">
-                    <span class="slider__chev-right"></span>
+                    <span class="slider__chev slider__chev-left"></span>
+                    <span class="slider__chev slider__chev-right"></span>
+                    <div class="slider__slide active">
+                        <div class="power-on power-on-vertical"></div>
+                        <div class="power-on power-on-horizontal"></div>
+                        <div class="display-off display-off-vertical"></div>
+                        <div class="display-off display-off-horizontal"></div>
+                        <img class="slider__phone-vertical" src="./assets/images/iPhone_vertical.png" alt="phone">
+                        <img class="slider__phone-horizontal" src="./assets/images/iPhone_horizontal.png" alt="phone">
+                    </div>
+                    <div class="slider__slide">
+                        <img class="slider__phone1" src="./assets/images/slider2.1.png" alt="phone">
+                        <img class="slider__phone2" src="./assets/images/slider2.2.png" alt="phone">
+                        <img class="slider__phone3" src="./assets/images/slider2.3.png" alt="phone">
+                    </div>                    
                 </div>
             </div>
             <div class="slider-bottom"></div>  
@@ -49,19 +60,19 @@
                 </p> 
                 <div class="column3-layout-our-services">
                    
-                    <div class="first-column">      
+                    <div class="one-column">      
                         <div class="icon-wrapper"><span class="icon icon-custom"></span> </div>                 
                         <h4 class="column-header">Custom Design</h4>
                         <p class="column3-layout__content">Curabitur  vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     </div>
                    
-                    <div class="second-column">
+                    <div class="one-column">
                         <div class="icon-wrapper"> <span class="icon icon-inovative"></span></div>                       
                         <h4 class="column-header">Inovative Ideas</h4>
                         <p class="column3-layout__content">Quisque luctus, quam eget molestie com- modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                     </div>
                    
-                    <div class="third-column">
+                    <div class="one-column">
                         <div class="icon-wrapper"><span class="icon icon-love"></span></div>
                         <h4 class="column-header">Love Is The Answer</h4>
                         <p class="column3-layout__content">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
@@ -69,19 +80,19 @@
                 </div> 
 
                 <div class="column3-layout-our-services">                   
-                    <div class="first-column">
+                    <div class="one-column">
                         <div class="icon-wrapper"><span class="icon icon-responsive"></span></div>
                         <h4 class="column-header">Responsive Layout</h4>
                         <p class="column3-layout__content">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae- sent elit leo.</p>
                     </div>
                     
-                    <div class="second-column">
+                    <div class="one-column">
                         <div class="icon-wrapper"><span class="icon icon-support"></span></div>
                         <h4 class="column-header">24 / 7 Support</h4>
                         <p class="column3-layout__content">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen- tesque egestas venenatis lorem .</p>
                     </div>
                    
-                    <div class="third-column">
+                    <div class="one-column">
                         <div class="icon-wrapper"><span class="icon icon-start"></span></div>
                         <h4 class="column-header">Feel Like A Star</h4>
                         <p class="column3-layout__content">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
@@ -101,41 +112,38 @@
                         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                     </div>
                     <div class="information__project-category">
-                        <button class="button button-all">
+                        <button class="button button-all" data-category="all">
                            All
                         </button>
-                        <button  class="button button-web">
+                        <button  class="button button-web" data-category="web">
                             Web Design
                         </button>
-                        <button class="button button-graphic">
+                        <button class="button button-graphic" data-category="graphic">
                             Graphic Design
                         </button>
-                        <button class="button button-art">
+                        <button class="button button-art" data-category="art">
                             Artwork
                         </button>
                     </div>
                 </div>
                 <div class="column4-layout">
-                    <div class="column4-layout__first-column">
-                        <div class="portfolio_image image1"></div>
-                        <div class="portfolio_image image5"></div>
-                        <div class="portfolio_image image9"></div>
-                    </div>
-                    <div class="column4-layout__second-column">
-                        <div class="portfolio_image image2"></div>
-                        <div class="portfolio_image image6"></div>
-                        <div class="portfolio_image image10"></div>
-                    </div>
-                    <div class="column4-layout__third-column">
-                        <div class="portfolio_image image3"></div>
-                        <div class="portfolio_image image7"></div>
-                        <div class="portfolio_image image11"></div>
-                    </div>
-                    <div class="column4-layout__fifth-column">
-                        <div class="portfolio_image image4"></div>
-                        <div class="portfolio_image image8"></div>
-                        <div class="portfolio_image image12"></div>
-                    </div>
+                    
+                        <div class="portfolio_image image1" data-category="web"></div>
+                        <div class="portfolio_image image2" data-category="graphic"></div>
+                        <div class="portfolio_image image3" data-category="web"></div>
+                 
+                        <div class="portfolio_image image4" data-category="graphic"></div>
+                        <div class="portfolio_image image5" data-category="art"></div>
+                        <div class="portfolio_image image6" data-category="art"></div>
+                   
+                        <div class="portfolio_image image7" data-category="web"></div>
+                        <div class="portfolio_image image8" data-category="graphic"></div>
+                        <div class="portfolio_image image9" data-category="art"></div>
+               
+                        <div class="portfolio_image image10" data-category="graphic"></div>
+                        <div class="portfolio_image image11" data-category="art"></div>
+                        <div class="portfolio_image image12" data-category="art"></div>
+                    
                 </div>       
             </div>
             <div class="portfolio__bottom"></div>
@@ -224,7 +232,7 @@
                         <input class="feedback__input" type="email" name="email"  required="required" placeholder="Email(Required)">    
                         <input class="feedback__input" type="text" name="subject" placeholder="Subject">
                         <textarea class="feedback__textarea" name="describe project" cols="30" rows="9" placeholder="Describe your project in detail..."></textarea> 
-                        <button class="feedback__submit"type="submit">Send</button>               
+                        <button class="feedback__submit" type="submit">Send</button>               
                     </form>
                     <div class="contact-information">
                         <h3 class="contact-information__header">

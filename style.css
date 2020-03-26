@@ -1114,6 +1114,35 @@ html {
         top: 115px;        
     }
 
+    .display-off-vertical {
+        width: 143px;
+        height: 253px;
+        left: 37px;
+        top: 88px;
+    }
+
+    .display-off-horizontal {
+        width: 254px;
+        height: 143px;
+        left: 307px;
+        top: 142px;
+    }
+
+    .power-on {
+        width: 35px;
+        height: 35px;
+    }
+
+    .power-on-vertical {
+        left: 92px;
+        top: 346px;
+    }
+
+    .power-on-horizontal {
+        left: 268px;
+        top: 196px;
+    }    
+
     .slider__phone1 {
         left: 137px;
     }
@@ -1275,5 +1304,49 @@ html {
 
     .footer-copyright {
         font-size: 1.3rem;
+    }
+
+    @media (max-width: 767px) {
+
+        .wrapper {
+            max-width: 375px;
+        }
+
+        .header-content {
+            height: 71px;
+            justify-content: center;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            letter-spacing: -0.04em;  
+            width: 92px;              
+        }
+
+        .logo {
+            margin: 0;
+        }
+
+        .navigation {
+            display: none;
+        }
+
+        .header-bottom {
+            display: none;
+        }
+
+        .slider__phone-vertical {
+            width: 88px;
+            height: 177px;
+        }
+
+        .slider__phone-horizontal {
+            width: 177px;
+            height: 88px;
+        }
+
+
+
     }
 }

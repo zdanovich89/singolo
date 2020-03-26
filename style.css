@@ -1336,17 +1336,106 @@ html {
             display: none;
         }
 
+        .slider-content {
+            height: 218px;
+        }
+
         .slider__phone-vertical {
             width: 88px;
             height: 177px;
+            padding: 20px 0px 0px 40px;
         }
 
         .slider__phone-horizontal {
             width: 177px;
             height: 88px;
+            padding: 65px 0 0 28px;
         }
 
+        .slider__slide {
+            margin: 0;
+        }
+        
+        .slider__chev-left {
+            left: 9px;
+        }
 
+        .slider__chev-right {
+            right: 9px;
+        }
+
+        .slider-bottom {
+            height: 2px;
+        }
+
+        .services-header {
+            padding: 27px 0 0 32px;
+        }
+
+        .our-services__content {
+            max-width: 314px;
+            max-height: 214px;
+            padding: 19px 35px 7px 32px;
+        }
+
+        .column3-layout-our-services {
+            padding: 19px 0 0px 32px;
+        }
+
+        .one-column {
+            padding: 0px 34px 7px 0;
+        }
+
+        .icon-wrapper {          
+            margin-right: 13px;
+        }
+
+        .column3-layout__content {
+            text-align: justify;            
+        }
+
+        .services-bottom {
+            display: none;
+        }
+
+        .header {
+            padding: 47px 0 16px 30px;
+        }
+
+        .information__content {
+            line-height: 3rem;
+            padding: 11px 0 10px 30px;
+            width: 315px;
+            height: 96px;
+        }
+
+        .button-all {
+            margin-left: 30px;
+        }
+
+        .information__project-category {
+            padding-bottom: 0px;
+        }
+        
+        .portfolio_image {
+            width: 151px;
+            height: 128px;                
+            margin: 0 0 14px 0;
+            background-size: cover;
+        }
+
+        .column4-layout {
+            justify-content: space-between;
+            margin: 21px 0px 33px 30px;
+            max-width: 315px;
+            max-height: 555px;
+        }
+
+        .portfolio__bottom {
+            background-color: #2d303a;
+        }
+        
+        
 
     }
 }

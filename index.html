@@ -10,10 +10,32 @@
 <body>
 
     <header class="nav-header">
-        <div class="wrapper">
+        <div class="wrapper">  
+            <div class="mobile-nav hidden">
+                <div class="mobile-logo">
+                    <span class="hamburger hamburger-active">
+                        <span class="hamburger__line"></span>
+                    </span>
+                    <div class="logo logo-active">
+                        <a href="#"><h1>Singolo<span>*</span></h1></a>
+                    </div>
+                </div>                 
+                <nav class="mobile-navigation-wrapper">
+                    <ul class="mobile-navigation">
+                        <li><a class="nav-header__link" href="#home">Home</a></li>
+                        <li><a class="nav-header__link" href="#services">Services</a></li>
+                        <li><a class="nav-header__link" href="#portfolio">Portfolio</a></li>
+                        <li><a class="nav-header__link" href="#about">About</a></li>
+                        <li><a class="nav-header__link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>    
+            </div>       
             <div class="header-content">
-                <div class="logo">
-                    <a href="#"><h1 id="home">Singolo<span>*</span></h1></a>
+                <span class="hamburger main">
+                    <span class="hamburger__line"></span>
+                </span>
+                <div class="logo logo-main">
+                    <a href=""><h1>Singolo<span>*</span></h1></a>
                 </div>            
                 <nav class="navigation-wrapper">
                     <ul class="navigation">
@@ -30,7 +52,7 @@
     </header> 
 
     <main>
-        <div class="slider">
+        <div class="slider" id="home">
             <div class="wrapper">
                 <div class="slider-content">
                     <span class="slider__chev slider__chev-left"></span>

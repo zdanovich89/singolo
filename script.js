@@ -2,42 +2,77 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // section Header
     let navigation = document.querySelector(".navigation");
-    let navigationElements = navigation.querySelectorAll("a");   
+    let navigationElements = navigation.querySelectorAll("a");  
+    let mainHamburger = document.querySelector(".main");
+    let activeHamburger = document.querySelector(".hamburger-active");
+    let mobileNavigation = document.querySelector(".mobile-navigation");
+    let mobileNavigationElements = mobileNavigation.querySelectorAll("a");
+    let mobileNav = document.querySelector(".mobile-nav");
+    let logoMain = document.querySelector(".logo-main");
     
-    window.addEventListener("scroll", function() {
-        if (window.pageYOffset < 600) {
+    
+    window.addEventListener("scroll", function() {       
+        let hightSlider = document.querySelector(".slider").offsetHeight;
+        let hightServices = document.querySelector(".our-services").offsetHeight;
+        let hightPortfolio = document.querySelector(".portfolio").offsetHeight;
+        let hightAboutUs = document.querySelector(".about-us").offsetHeight;
+       
+        if (window.pageYOffset < hightSlider) {
             navigationElements.forEach(item => {            
-                item.classList.remove("active-menu")
+                item.classList.remove("active-menu");
             })                     
             navigationElements[0].classList.add("active-menu"); 
+            mobileNavigationElements.forEach(item => {
+                item.classList.remove("active-menu");               
+            }) 
+            mobileNavigationElements[0].classList.add("active-menu");            
         };
 
-        if (window.pageYOffset > 600 && window.pageYOffset < 1132) {
+        if (window.pageYOffset >  hightSlider && 
+            window.pageYOffset <= hightSlider + hightServices) {
             navigationElements.forEach(item => {            
                 item.classList.remove("active-menu")
             })                     
             navigationElements[1].classList.add("active-menu"); 
+            mobileNavigationElements.forEach(item => {
+                item.classList.remove("active-menu");               
+            }) 
+            mobileNavigationElements[1].classList.add("active-menu"); 
         };
 
-        if (window.pageYOffset > 1132 && window.pageYOffset < 2000) {
+        if (window.pageYOffset > hightSlider + hightServices && 
+            window.pageYOffset < hightSlider + hightServices + hightPortfolio) {
             navigationElements.forEach(item => {            
                 item.classList.remove("active-menu")
             })                     
             navigationElements[2].classList.add("active-menu"); 
+            mobileNavigationElements.forEach(item => {
+                item.classList.remove("active-menu");               
+            }) 
+            mobileNavigationElements[2].classList.add("active-menu"); 
         };
 
-        if (window.pageYOffset > 2000 && window.pageYOffset < 2733) {
+        if (window.pageYOffset > hightSlider + hightServices + hightPortfolio &&
+             window.pageYOffset < hightSlider + hightServices + hightPortfolio + hightAboutUs) {
             navigationElements.forEach(item => {            
                 item.classList.remove("active-menu")
             })                     
             navigationElements[3].classList.add("active-menu"); 
+            mobileNavigationElements.forEach(item => {
+                item.classList.remove("active-menu");               
+            }) 
+            mobileNavigationElements[3].classList.add("active-menu"); 
         };
 
-        if (window.pageYOffset > 2733) {
+        if (window.pageYOffset > hightSlider + hightServices + hightPortfolio + hightAboutUs) {
             navigationElements.forEach(item => {            
                 item.classList.remove("active-menu")
             })                     
             navigationElements[4].classList.add("active-menu"); 
+            mobileNavigationElements.forEach(item => {
+                item.classList.remove("active-menu");               
+            }) 
+            mobileNavigationElements[4].classList.add("active-menu"); 
         };
     })
     
@@ -51,6 +86,26 @@ document.addEventListener("DOMContentLoaded", function() {
             e.target.classList.add("active-menu");        
         }        
     }
+
+    mainHamburger.addEventListener("click", function showMobileMenu() {        
+        mobileNav.classList.toggle("hidden");
+        logoMain.classList.toggle("hidden");
+    });
+
+    activeHamburger.addEventListener("click", function hideMobileMenu() {
+        mobileNav.classList.toggle("hidden");
+        logoMain.classList.toggle("hidden");
+    })
+
+    mobileNavigation.addEventListener("click", function hideMobileMenu(e) {
+        if (e.target.tagName == 'A') {          
+            mobileNav.classList.toggle("hidden");
+            logoMain.classList.toggle("hidden");
+        }
+
+    })
+
+
 
     // section Slider
     let slides = document.querySelectorAll(".slider__slide");
